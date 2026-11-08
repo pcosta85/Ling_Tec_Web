@@ -1,0 +1,227 @@
+
+:root {
+    --principal: #146c63;
+    --principal-escuro: #0d4d46;
+    --fundo: #f4f8f7;
+    --branco: #ffffff;
+    --texto: #243b3a;
+    --borda: #d5e3df;
+    --destaque: #e3f3ed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background: var(--principal);
+    color: var(--branco);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+.cabecalho p {
+    margin: 5px 0 0;
+}
+
+.navegacao {
+    background: var(--principal-escuro);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    padding: 13px 18px;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+    background: var(--principal);
+}
+
+main {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--principal-escuro);
+    border-bottom: 2px solid var(--borda);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: var(--principal);
+}
+
+.destaque {
+    background: var(--destaque);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.destaque h2 {
+    margin-top: 0;
+}
+
+.botao {
+    display: inline-block;
+    background: var(--principal);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background: var(--principal-escuro);
+}
+
+.grelha {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cartao {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.cartao img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #e7f1ed;
+}
+
+.cartao figcaption,
+.texto-cartao {
+    padding: 18px;
+}
+
+.cartao h3 {
+    margin-top: 0;
+}
+
+.painel {
+    background: var(--branco);
+    padding: 22px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--branco);
+}
+
+caption {
+    padding: 12px;
+    font-weight: bold;
+    color: var(--principal-escuro);
+}
+
+th,
+td {
+    border: 1px solid var(--borda);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: var(--principal);
+    color: var(--branco);
+}
+
+tbody tr:nth-child(even) {
+    background: #eef6f2;
+}
+
+tfoot {
+    background: var(--destaque);
+    font-style: italic;
+}
+
+audio {
+    width: min(100%, 500px);
+}
+
+.nota {
+    font-size: 0.9rem;
+    color: #5d6f6a;
+}
+
+.rodape {
+    background: var(--principal-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 18px 0;
+}
+
+.rodape p {
+    margin: 4px 0;
+}
+
+a:focus-visible {
+    outline: 3px solid #f4b942;
+    outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+    .grelha {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu a {
+        padding: 10px 12px;
+    }
+
+    .destaque {
+        padding: 20px;
+    }
+}
