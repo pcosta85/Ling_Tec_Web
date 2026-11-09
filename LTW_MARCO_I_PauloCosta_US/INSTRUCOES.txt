@@ -1,7 +1,0 @@
-Projeto AquaPet — Marco 1
-1. Preencha os campos em falta no README.md.
-2. Execute: py -m http.server 8000 --bind 127.0.0.1
-3. Abra: http://127.0.0.1:8000/
-4. Verifique os links, as imagens, o formulário e a tabela.
-5. Valide cada página no W3C antes da entrega.
-6. As imagens são ilustrações provisórias.
