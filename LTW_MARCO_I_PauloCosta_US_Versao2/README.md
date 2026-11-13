@@ -80,6 +80,7 @@ Abrir `http://127.0.0.1:8000/`.
 - **Ferramenta(s) usada(s):** ChatGPT (OpenAI).
 - **Para que a usei:** Organização das quatro páginas HTML.
 - **Para que a usei:** Complementação da formatação das paginas
+- **Para que a usei:** Averiguação de erros cometidos nas elaboração do projecto
 
 ## 13. Tutorial
 - **Youtube:** Link - https://www.youtube.com/watch?v=8V3mw1w6h0U&t=266s
