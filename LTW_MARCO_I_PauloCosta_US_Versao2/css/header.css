@@ -1,0 +1,131 @@
+/* =====================================================
+   CABEÇALHO AQUAPET
+   ===================================================== */
+
+header {
+    width: 100%;
+    padding: 16px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--cor-fundo);
+    border-bottom: 4px solid var(--cor-principal);
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nav_logo {
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Menu horizontal */
+
+.menu-horizontal {
+    background-color: var(--cor-fundo);
+}
+
+#nav_list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-item a {
+    display: block;
+    padding: 9px 12px;
+    color: var(--cor-escura);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-item a:hover,
+.nav-item a:focus-visible {
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
+}
+
+.nav-item.active a,
+.nav-item a[aria-current="page"] {
+    color: var(--cor-clara);
+    background-color: var(--cor-realce);
+    font-weight: 700;
+}
+
+/* Botão de menu móvel */
+
+#mobile_btn {
+    display: none;
+    border: none;
+    background: transparent;
+    color: var(--cor-escura);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+#mobile_nav_list {
+    list-style: none;
+    padding: 12px 0;
+}
+
+#mobile_nav_list .nav-item {
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 12px 0;
+    }
+
+    #mobile_nav_list a {
+        display: block;
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 14px 5%;
+    }
+
+    #nav_logo {
+        font-size: 21px;
+    }
+}

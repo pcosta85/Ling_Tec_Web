@@ -1,0 +1,91 @@
+/* =====================================================
+   CONTACTOS AQUAPET
+   ===================================================== */
+
+#contacto {
+    min-height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 40px 8%;
+}
+
+#aqua_cont {
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+}
+
+#entrar_em_contacto {
+    flex: 1;
+    min-width: 0;
+}
+
+#entrar_em_contacto p {
+    max-width: 700px;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: var(--cor-fundo);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#contacto .section-subtitle {
+    font-size: 2rem;
+}
+
+#contact_info {
+    margin-top: 25px;
+    max-width: 700px;
+    padding: 15px;
+    background-color: var(--cor-clara);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    font-style: normal;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact_item a {
+    color: var(--cor-escura);
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px;
+    background-color: var(--cor-clara);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1170px) {
+    #contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #aqua_cont {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contacto {
+        padding: 25px 5%;
+    }
+
+    #entrar_em_contacto p {
+        text-align: left;
+    }
+}

@@ -1,0 +1,194 @@
+/* =====================================================
+   AQUAPET — ESTILOS COMPLEMENTARES
+   MARCO 1 + FICHA 3
+   ===================================================== */
+
+/* Páginas internas */
+
+.pagina {
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    padding: 35px 8% 55px;
+}
+
+.pagina h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.pagina h2 {
+    margin: 24px 0 12px;
+}
+
+.pagina p {
+    line-height: 1.65;
+    margin: 10px 0;
+}
+
+.pagina ul,
+.pagina ol {
+    padding-left: 26px;
+    line-height: 1.8;
+}
+
+/* Modelo de caixa:
+   conteúdo + padding + border + margin */
+
+.bloco {
+    background-color: var(--cor-clara);
+    padding: 22px;
+    margin: 18px 0;
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* =====================================================
+   TABELAS
+   ===================================================== */
+
+.tabela-rolagem {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-clara);
+}
+
+caption {
+    padding: 12px;
+    font-weight: bold;
+    color: var(--cor-escura);
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-fundo);
+}
+
+tbody tr:hover {
+    background-color: #d1e9e3;
+}
+
+/* =====================================================
+   GALERIA DE IMAGENS
+   ===================================================== */
+
+.grelha-fotos {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.grelha-fotos figure {
+    flex: 1 1 190px;
+    min-width: 0;
+    background-color: var(--cor-clara);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.grelha-fotos img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.grelha-fotos figcaption {
+    padding-top: 8px;
+    text-align: center;
+}
+
+/* =====================================================
+   FORMULÁRIO DE CONTACTO
+   ===================================================== */
+
+.formulario {
+    max-width: 680px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #7d9f99;
+    border-radius: 8px;
+    font: inherit;
+    background-color: var(--cor-clara);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--cor-principal);
+    outline-offset: 2px;
+}
+
+.formulario button {
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
+    font: inherit;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: var(--cor-escura);
+}
+
+.nota {
+    font-size: 0.9rem;
+    color: #465d59;
+}
+
+/* =====================================================
+   RESPONSIVIDADE
+   ===================================================== */
+
+@media screen and (max-width: 600px) {
+    .pagina {
+        padding: 25px 5%;
+    }
+
+    .pagina h1 {
+        font-size: 1.6rem;
+    }
+
+    .bloco {
+        padding: 16px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+        font-size: 0.9rem;
+    }
+}

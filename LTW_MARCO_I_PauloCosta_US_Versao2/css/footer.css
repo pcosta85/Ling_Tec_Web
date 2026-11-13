@@ -1,0 +1,38 @@
+/* =====================================================
+   RODAPÉ AQUAPET
+   ===================================================== */
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--cor-fundo);
+    border-top: 4px solid var(--cor-principal);
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 8% 24px;
+}
+
+#copyright {
+    color: var(--cor-texto);
+    font-size: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_items {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 16px 8% 24px;
+        text-align: center;
+    }
+
+    .social-media-buttons {
+        justify-content: center;
+    }
+}
