@@ -801,22 +801,7 @@ Ficheiros principais:
 Estado: efeitos implementados no código proposto.
 Teste da preferência de movimento reduzido pendente.
 
-## 8.9. Exercício 9 - Teste, validação e Git
 
-A etapa final consiste em verificar:
-
-- Estrutura HTML.
-- Correção das propriedades CSS.
-- Funcionamento dos menus.
-- Funcionamento dos filtros.
-- Comportamento responsivo.
-- Carregamento dos recursos.
-- Ausência de erros 404.
-- Publicação no GitHub.
-
-Estado: parcialmente concluído.
-A validação externa, os testes finais e a
-publicação devem ser confirmados pelo estudante.
 
 ---
 
