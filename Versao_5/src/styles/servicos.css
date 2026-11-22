@@ -634,3 +634,729 @@
     }
 
 }
+
+/* =========================================
+   10. LAYOUT PRINCIPAL DOS SERVIÇOS
+
+   Ficha de Exercícios 4
+
+   Menu vertical: 220px
+   Conteúdo principal: 1fr
+========================================= */
+
+.servicos-layout {
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    align-items: start;
+
+    gap: 25px;
+
+    width: 100%;
+
+    padding: 25px 5% 40px;
+
+}
+
+
+/* =========================================
+   10.1. COLUNA LATERAL
+========================================= */
+
+.servicos-sidebar {
+
+    width: 100%;
+
+    min-width: 0;
+
+    position: sticky;
+
+    top: 90px;
+
+}
+
+
+/* =========================================
+   10.2. MENU VERTICAL
+========================================= */
+
+.menu-vertical {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: 100%;
+
+    padding: 20px 15px;
+
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-branca);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* Título do menu */
+
+.menu-vertical h2 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding-bottom: 15px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: var(--cor-branca);
+
+    border-bottom:
+        1px solid var(--cor-secundaria);
+
+}
+
+
+/* Ícone do título */
+
+.menu-vertical h2 i {
+
+    color: var(--cor-secundaria);
+
+}
+
+
+/* Lista de opções */
+
+.menu-vertical ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* Elementos individuais */
+
+.menu-vertical li {
+
+    width: 100%;
+
+}
+
+
+/* =========================================
+   10.3. LIGAÇÕES DO MENU VERTICAL
+========================================= */
+
+.menu-vertical a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: var(--cor-branca);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition:
+
+        background-color 0.3s ease,
+
+        color 0.3s ease,
+
+        transform 0.3s ease;
+
+}
+
+
+/* Ícones do menu */
+
+.menu-vertical a i {
+
+    width: 18px;
+
+    flex-shrink: 0;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    color: var(--cor-secundaria);
+
+}
+
+
+/* Efeito hover e focus */
+
+.menu-vertical a:hover,
+
+.menu-vertical a:focus-visible {
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-primaria);
+
+    transform: translateX(3px);
+
+}
+
+
+.menu-vertical a:hover i,
+
+.menu-vertical a:focus-visible i {
+
+    color: var(--cor-primaria);
+
+}
+
+
+/* Opção activa */
+
+.menu-vertical a.ativo,
+
+.menu-vertical a[aria-current="location"] {
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-primaria);
+
+}
+
+
+.menu-vertical a.ativo i,
+
+.menu-vertical a[aria-current="location"] i {
+
+    color: var(--cor-primaria);
+
+}
+
+
+/* =========================================
+   10.4. COLUNA PRINCIPAL
+========================================= */
+
+.servicos-conteudo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+/* Retirar margens duplicadas */
+
+.servicos-conteudo #servicos,
+
+.servicos-conteudo #ementa,
+
+.servicos-conteudo #servicos-contacto {
+
+    width: 100%;
+
+    min-width: 0;
+
+    margin: 0;
+
+    padding: 25px 0;
+
+}
+
+
+/* =========================================
+   10.5. CARTÕES DOS SERVIÇOS
+========================================= */
+
+.servicos-conteudo .servicos-container {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+
+}
+
+
+.servicos-conteudo .cartao {
+
+    min-width: 0;
+
+    padding: 25px 15px;
+
+    border: 1px solid var(--cor-secundaria);
+
+}
+
+
+.servicos-conteudo .cartao:focus-within {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =========================================
+   10.6. DESCRIÇÃO DA EMENTA
+========================================= */
+
+#ementa .ementa-descricao {
+
+    max-width: 65ch;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   10.7. FORMATAÇÃO DOS FILTROS
+========================================= */
+
+.ementa-filtros {
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+.ementa-filtros .campo-filtro {
+
+    flex: 1 1 180px;
+
+    min-width: 0;
+
+}
+
+
+/* =========================================
+   10.8. TABELA RESPONSIVA
+========================================= */
+
+.servicos-conteudo .tabela-container {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    overflow-x: auto;
+
+}
+
+
+#tabela_produtos {
+
+    width: 100%;
+
+    min-width: 550px;
+
+}
+
+
+/* =========================================
+   10.9. CONTAGEM DOS PRODUTOS
+========================================= */
+
+#ementa #total_produtos {
+
+    width: 100%;
+
+    max-width: none;
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    text-align: right;
+
+    color: var(--cor-primaria);
+
+}
+
+
+/* Mensagem de pesquisa sem resultados */
+
+#ementa #sem_resultados {
+
+    width: 100%;
+
+    max-width: none;
+
+}
+
+
+/* =========================================
+   10.10. NOTA INFORMATIVA
+========================================= */
+
+.ementa-nota {
+
+    width: 100%;
+
+    align-items: flex-start;
+
+}
+
+
+.ementa-nota i {
+
+    flex-shrink: 0;
+
+}
+
+
+.ementa-nota p {
+
+    max-width: 65ch;
+
+    margin: 0;
+
+}
+
+
+/* =========================================
+   10.11. CONVITE E CONTACTO
+========================================= */
+
+.servicos-contacto-container {
+
+    width: 100%;
+
+}
+
+
+.servicos-contacto-container p {
+
+    max-width: 65ch;
+
+    margin: 0 auto;
+
+}
+
+
+.servicos-contacto-botoes .btn-default:hover,
+
+.servicos-contacto-botoes .btn-default:focus-visible {
+
+    background-color: var(--cor-branca);
+
+    color: var(--cor-primaria);
+
+}
+
+
+/* =========================================
+   11. DESIGN RESPONSIVO
+========================================= */
+
+
+/* =========================================
+   11.1. ECRÃS ATÉ 1024px
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .servicos-layout {
+
+        grid-template-columns: 220px 1fr;
+
+        gap: 20px;
+
+        padding: 20px 4% 30px;
+
+    }
+
+
+    .menu-vertical {
+
+        padding: 15px 10px;
+
+    }
+
+
+    .servicos-conteudo .servicos-container {
+
+        gap: 12px;
+
+    }
+
+}
+
+
+/* =========================================
+   11.2. ECRÃS ATÉ 768px
+
+   Menu e conteúdo numa única coluna.
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .servicos-layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 20px 4% 30px;
+
+    }
+
+
+    .servicos-sidebar {
+
+        position: static;
+
+        width: 100%;
+
+    }
+
+
+    .menu-vertical {
+
+        width: 100%;
+
+        padding: 20px 15px;
+
+    }
+
+
+    .servicos-conteudo {
+
+        gap: 15px;
+
+    }
+
+
+    .servicos-conteudo #servicos,
+
+    .servicos-conteudo #ementa,
+
+    .servicos-conteudo #servicos-contacto {
+
+        padding: 20px 0;
+
+    }
+
+
+    .ementa-filtros {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .ementa-filtros .campo-filtro {
+
+        flex: 0 1 auto;
+
+        width: 100%;
+
+    }
+
+
+    #limpar_filtros {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================
+   11.3. ECRÃS ATÉ 600px
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    #servicos-introducao h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    #servicos-introducao p {
+
+        font-size: 14px;
+
+    }
+
+
+    .servicos-layout {
+
+        padding: 15px 4% 25px;
+
+    }
+
+
+    .menu-vertical h2 {
+
+        font-size: 15px;
+
+    }
+
+
+    .menu-vertical a {
+
+        font-size: 13px;
+
+    }
+
+
+    .servicos-conteudo .servicos-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    #ementa .section-title {
+
+        font-size: 23px;
+
+    }
+
+
+    .servicos-contacto-container {
+
+        padding: 25px 15px;
+
+    }
+
+}
+
+
+/* =========================================
+   11.4. ECRÃS ATÉ 480px
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    #servicos-introducao h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .menu-vertical {
+
+        padding: 15px 10px;
+
+    }
+
+
+    .servicos-contacto-botoes {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .servicos-contacto-botoes .btn-default {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================
+   12. ACESSIBILIDADE
+
+   Preferência de movimento reduzido
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .menu-vertical a,
+
+    .servicos-conteudo .cartao,
+
+    .servicos-contacto-botoes .btn-default {
+
+        transition: none;
+
+    }
+
+
+    .menu-vertical a:hover,
+
+    .menu-vertical a:focus-visible,
+
+    .servicos-conteudo .cartao:hover,
+
+    .servicos-conteudo .cartao:focus-within,
+
+    .servicos-contacto-botoes .btn-default:hover,
+
+    .servicos-contacto-botoes .btn-default:focus-visible {
+
+        transform: none;
+
+    }
+
+}

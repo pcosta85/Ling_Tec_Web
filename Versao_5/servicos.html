@@ -15,18 +15,22 @@
     <title>Serviços | Esplanada Morabeza</title>
 
     <!-- Font Awesome -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <!-- Google Fonts -->
+
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 
     <!-- CSS principal -->
+
     <link rel="stylesheet"
           href="src/styles/styles.css">
 
     <!-- JavaScript -->
+
     <script src="src/javascript/script.js" defer></script>
 
 </head>
@@ -39,7 +43,9 @@
 
     <header>
 
-        <nav id="navbar">
+        <nav id="navbar"
+             class="menu-horizontal"
+             aria-label="Navegação principal">
 
             <a href="index.html" id="nav_logo">
 
@@ -53,25 +59,39 @@
             <ul id="nav_list">
 
                 <li class="nav-item">
+
                     <a href="./index.html">Início</a>
+
                 </li>
 
                 <li class="nav-item">
+
                     <a href="./sobre.html">Sobre</a>
+
                 </li>
 
                 <li class="nav-item active">
+
                     <a href="./servicos.html"
-                    aria-current="page">Serviços</a>
+                       class="ativo"
+                       aria-current="page">
+
+                        Serviços
+
+                    </a>
+
                 </li>
 
                 <li class="nav-item">
+
                     <a href="./contactos.html">Contacto</a>
+
                 </li>
 
             </ul>
 
             <!-- Menu móvel -->
+
             <button id="mobile_btn"
                     type="button"
                     aria-label="Abrir menu"
@@ -87,17 +107,24 @@
 
     </header>
 
+
     <!-- =====================================
          CONTEÚDO PRINCIPAL
     ====================================== -->
 
     <main id="content">
 
-        <!-- Apresentação -->
+
+        <!-- =================================
+             APRESENTAÇÃO
+        ================================== -->
+
         <section id="servicos-introducao">
 
             <span class="servicos-subtitle">
+
                 Sabores e bons momentos
+
             </span>
 
             <h1>Os nossos serviços</h1>
@@ -110,402 +137,750 @@
 
         </section>
 
-        <!-- =================================
-             CARTÕES DOS SERVIÇOS
-        ================================== -->
-
-        <section id="servicos">
-
-            <div class="servicos-container">
-
-                <article class="cartao">
-
-                    <i class="fa-solid fa-utensils"
-                       aria-hidden="true"></i>
-
-                    <h3>Gastronomia</h3>
-
-                    <p>
-                        Refeições e sabores para
-                        diferentes momentos do dia.
-                    </p>
-
-                </article>
-
-                <article class="cartao">
-
-                    <i class="fa-solid fa-mug-hot"
-                       aria-hidden="true"></i>
-
-                    <h3>Cafetaria</h3>
-
-                    <p>
-                        Cafés, chás, bebidas e
-                        pequenos lanches.
-                    </p>
-
-                </article>
-
-                <article class="cartao">
-
-                    <i class="fa-solid fa-users"
-                       aria-hidden="true"></i>
-
-                    <h3>Convívio</h3>
-
-                    <p>
-                        Um ambiente tranquilo e
-                        acolhedor para bons momentos.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
 
         <!-- =================================
-             EMENTA E PREÇOS
+             LAYOUT PRINCIPAL
+
+             Ficha 4 - Exercício 4
+
+             Coluna esquerda: 220px
+             Coluna direita: 1fr
         ================================== -->
 
-        <section id="ementa">
+        <div class="servicos-layout">
 
-            <span class="servicos-subtitle">
-                Conheça os nossos produtos
-            </span>
 
-            <h2 class="section-title">
-                Ementa e preços
-            </h2>
+            <!-- =============================
+                 MENU VERTICAL
+            ============================== -->
 
-            <p class="ementa-descricao">
-                Consulte os produtos organizados
-                por categoria.
-            </p>
+            <aside class="servicos-sidebar">
 
-            <!-- Pesquisa e filtros -->
-            <div class="ementa-filtros">
+                <nav class="menu-vertical"
+                     aria-label="Navegação dos serviços">
 
-                <!-- Pesquisa -->
-                <div class="campo-filtro">
+                    <h2>
 
-                    <label for="pesquisa_produto">
-                        Pesquisar produto
-                    </label>
-
-                    <div class="pesquisa-container">
-
-                        <i class="fa-solid fa-magnifying-glass"
+                        <i class="fa-solid fa-list"
                            aria-hidden="true"></i>
 
-                        <input type="search"
-                               id="pesquisa_produto"
-                               placeholder="Nome do produto...">
+                        Menu de serviços
+
+                    </h2>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="#servicos">
+
+                                <i class="fa-solid fa-utensils"
+                                   aria-hidden="true"></i>
+
+                                Os nossos serviços
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#ementa">
+
+                                <i class="fa-solid fa-book-open"
+                                   aria-hidden="true"></i>
+
+                                Ementa e preços
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#categoria-cafetaria">
+
+                                <i class="fa-solid fa-mug-hot"
+                                   aria-hidden="true"></i>
+
+                                Cafetaria
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#categoria-bebidas">
+
+                                <i class="fa-solid fa-glass-water"
+                                   aria-hidden="true"></i>
+
+                                Bebidas
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#categoria-snacks">
+
+                                <i class="fa-solid fa-burger"
+                                   aria-hidden="true"></i>
+
+                                Sandes e snacks
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#categoria-gastronomia">
+
+                                <i class="fa-solid fa-plate-wheat"
+                                   aria-hidden="true"></i>
+
+                                Gastronomia
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#categoria-sobremesas">
+
+                                <i class="fa-solid fa-ice-cream"
+                                   aria-hidden="true"></i>
+
+                                Sobremesas
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#servicos-contacto">
+
+                                <i class="fa-solid fa-phone"
+                                   aria-hidden="true"></i>
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </aside>
+
+
+            <!-- =============================
+                 COLUNA PRINCIPAL
+            ============================== -->
+
+            <div class="servicos-conteudo">
+
+
+                <!-- =========================
+                     CARTÕES DOS SERVIÇOS
+                ========================== -->
+
+                <section id="servicos"
+                         aria-label="Tipos de serviços">
+
+                    <div class="servicos-container">
+
+
+                        <!-- Gastronomia -->
+
+                        <article class="cartao">
+
+                            <i class="fa-solid fa-utensils"
+                               aria-hidden="true"></i>
+
+                            <h3>Gastronomia</h3>
+
+                            <p>
+                                Refeições e sabores para
+                                diferentes momentos do dia.
+                            </p>
+
+                        </article>
+
+
+                        <!-- Cafetaria -->
+
+                        <article class="cartao">
+
+                            <i class="fa-solid fa-mug-hot"
+                               aria-hidden="true"></i>
+
+                            <h3>Cafetaria</h3>
+
+                            <p>
+                                Cafés, chás, bebidas e
+                                pequenos lanches.
+                            </p>
+
+                        </article>
+
+
+                        <!-- Convívio -->
+
+                        <article class="cartao">
+
+                            <i class="fa-solid fa-users"
+                               aria-hidden="true"></i>
+
+                            <h3>Convívio</h3>
+
+                            <p>
+                                Um ambiente tranquilo e
+                                acolhedor para bons momentos.
+                            </p>
+
+                        </article>
 
                     </div>
 
-                </div>
+                </section>
 
-                <!-- Categoria -->
-                <div class="campo-filtro">
 
-                    <label for="filtro_categoria">
-                        Categoria
-                    </label>
+                <!-- =========================
+                     EMENTA E PREÇOS
+                ========================== -->
 
-                    <select id="filtro_categoria">
+                <section id="ementa"
+                         aria-labelledby="titulo-ementa">
 
-                        <option value="todos">
-                            Todas as categorias
-                        </option>
+                    <span class="servicos-subtitle">
 
-                        <option value="cafetaria">
-                            Cafetaria
-                        </option>
+                        Conheça os nossos produtos
 
-                        <option value="bebidas">
-                            Bebidas
-                        </option>
+                    </span>
 
-                        <option value="snacks">
-                            Sandes e snacks
-                        </option>
+                    <h2 id="titulo-ementa"
+                        class="section-title">
 
-                        <option value="gastronomia">
-                            Gastronomia
-                        </option>
-
-                        <option value="sobremesas">
-                            Sobremesas
-                        </option>
+                        Ementa e preços
 
-                    </select>
+                    </h2>
 
-                </div>
-
-                <!-- Limpar filtros -->
-                <button type="button"
-                        id="limpar_filtros"
-                        class="btn-default">
-
-                    <i class="fa-solid fa-filter-circle-xmark"
-                       aria-hidden="true"></i>
-
-                    Limpar
-
-                </button>
-
-            </div>
-
-            <!-- Tabela de produtos -->
-            <div class="tabela-container"
-                 tabindex="0"
-                 role="region"
-                 aria-label="Tabela de produtos e preços">
-
-                <table id="tabela_produtos">
-
-                    <caption>
-                        Produtos e preços indicativos em CVE
-                    </caption>
-
-                    <thead>
-
-                        <tr>
-                            <th scope="col">N.º</th>
-                            <th scope="col">Produto</th>
-                            <th scope="col">Categoria</th>
-                            <th scope="col">Preço (CVE)</th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        <!-- CAFETARIA -->
-
-                        <tr data-categoria="cafetaria">
-                            <td>01</td>
-                            <td>Café expresso</td>
-                            <td>Cafetaria</td>
-                            <td class="preco">80,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="cafetaria">
-                            <td>02</td>
-                            <td>Café com leite</td>
-                            <td>Cafetaria</td>
-                            <td class="preco">120,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="cafetaria">
-                            <td>03</td>
-                            <td>Cappuccino</td>
-                            <td>Cafetaria</td>
-                            <td class="preco">150,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="cafetaria">
-                            <td>04</td>
-                            <td>Chá</td>
-                            <td>Cafetaria</td>
-                            <td class="preco">100,00 $</td>
-                        </tr>
-
-                        <!-- BEBIDAS -->
-
-                        <tr data-categoria="bebidas">
-                            <td>05</td>
-                            <td>Água mineral</td>
-                            <td>Bebidas</td>
-                            <td class="preco">80,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="bebidas">
-                            <td>06</td>
-                            <td>Refrigerante</td>
-                            <td>Bebidas</td>
-                            <td class="preco">150,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="bebidas">
-                            <td>07</td>
-                            <td>Sumo natural</td>
-                            <td>Bebidas</td>
-                            <td class="preco">250,00 $</td>
-                        </tr>
-
-                        <!-- SANDES E SNACKS -->
-
-                        <tr data-categoria="snacks">
-                            <td>08</td>
-                            <td>Sandes mista</td>
-                            <td>Sandes e snacks</td>
-                            <td class="preco">180,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="snacks">
-                            <td>09</td>
-                            <td>Tosta mista</td>
-                            <td>Sandes e snacks</td>
-                            <td class="preco">200,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="snacks">
-                            <td>10</td>
-                            <td>Hambúrguer</td>
-                            <td>Sandes e snacks</td>
-                            <td class="preco">350,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="snacks">
-                            <td>11</td>
-                            <td>Batata frita</td>
-                            <td>Sandes e snacks</td>
-                            <td class="preco">200,00 $</td>
-                        </tr>
-
-                        <!-- GASTRONOMIA -->
-
-                        <tr data-categoria="gastronomia">
-                            <td>12</td>
-                            <td>Cachupa refogada</td>
-                            <td>Gastronomia</td>
-                            <td class="preco">350,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="gastronomia">
-                            <td>13</td>
-                            <td>Prato do dia</td>
-                            <td>Gastronomia</td>
-                            <td class="preco">600,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="gastronomia">
-                            <td>14</td>
-                            <td>Frango grelhado</td>
-                            <td>Gastronomia</td>
-                            <td class="preco">700,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="gastronomia">
-                            <td>15</td>
-                            <td>Peixe grelhado</td>
-                            <td>Gastronomia</td>
-                            <td class="preco">850,00 $</td>
-                        </tr>
-
-                        <!-- SOBREMESAS -->
-
-                        <tr data-categoria="sobremesas">
-                            <td>16</td>
-                            <td>Gelado</td>
-                            <td>Sobremesas</td>
-                            <td class="preco">200,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="sobremesas">
-                            <td>17</td>
-                            <td>Bolo — fatia</td>
-                            <td>Sobremesas</td>
-                            <td class="preco">150,00 $</td>
-                        </tr>
-
-                        <tr data-categoria="sobremesas">
-                            <td>18</td>
-                            <td>Pudim</td>
-                            <td>Sobremesas</td>
-                            <td class="preco">200,00 $</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-            <!-- Mensagem de pesquisa -->
-            <p id="sem_resultados"
-               role="status"
-               hidden>
-
-                Nenhum produto encontrado.
-
-            </p>
-
-            <!-- Quantidade de produtos -->
-            <p id="total_produtos"
-               aria-live="polite">
-
-                18 produtos apresentados.
-
-            </p>
-
-            <!-- Observações -->
-            <div class="ementa-nota">
-
-                <i class="fa-solid fa-circle-info"
-                   aria-hidden="true"></i>
-
-                <p>
-                    Os preços apresentados são indicativos
-                    e encontram-se em escudos cabo-verdianos
-                    (CVE). Consulte o estabelecimento para
-                    confirmar os preços e a disponibilidade.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- =================================
-             CONTACTO
-        ================================== -->
-
-        <section id="servicos-contacto">
-
-            <div class="servicos-contacto-container">
-
-                <i class="fa-solid fa-mug-hot"
-                   aria-hidden="true"></i>
-
-                <h2>Venha desfrutar dos nossos serviços</h2>
-
-                <p>
-                    Visite-nos na Praça Alexandre Albuquerque,
-                    no Plateau, e desfrute de momentos
-                    agradáveis na Esplanada Morabeza.
-                </p>
-
-                <div class="servicos-contacto-botoes">
-
-                    <a href="contactos.html"
-                       class="btn-default">
-
-                        <i class="fa-solid fa-location-dot"
+                    <p class="ementa-descricao">
+
+                        Consulte os produtos organizados
+                        por categoria.
+
+                    </p>
+
+
+                    <!-- =====================
+                         PESQUISA E FILTROS
+                    ====================== -->
+
+                    <div class="ementa-filtros">
+
+
+                        <!-- Pesquisa -->
+
+                        <div class="campo-filtro">
+
+                            <label for="pesquisa_produto">
+
+                                Pesquisar produto
+
+                            </label>
+
+                            <div class="pesquisa-container">
+
+                                <i class="fa-solid fa-magnifying-glass"
+                                   aria-hidden="true"></i>
+
+                                <input type="search"
+                                       id="pesquisa_produto"
+                                       placeholder="Nome do produto...">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Filtro por categoria -->
+
+                        <div class="campo-filtro">
+
+                            <label for="filtro_categoria">
+
+                                Categoria
+
+                            </label>
+
+                            <select id="filtro_categoria">
+
+                                <option value="todos">
+
+                                    Todas as categorias
+
+                                </option>
+
+                                <option value="cafetaria">
+
+                                    Cafetaria
+
+                                </option>
+
+                                <option value="bebidas">
+
+                                    Bebidas
+
+                                </option>
+
+                                <option value="snacks">
+
+                                    Sandes e snacks
+
+                                </option>
+
+                                <option value="gastronomia">
+
+                                    Gastronomia
+
+                                </option>
+
+                                <option value="sobremesas">
+
+                                    Sobremesas
+
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Limpar filtros -->
+
+                        <button type="button"
+                                id="limpar_filtros"
+                                class="btn-default">
+
+                            <i class="fa-solid fa-filter-circle-xmark"
+                               aria-hidden="true"></i>
+
+                            Limpar
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- =====================
+                         TABELA RESPONSIVA
+                    ====================== -->
+
+                    <div class="tabela-container"
+                         tabindex="0"
+                         role="region"
+                         aria-label="Tabela de produtos e preços">
+
+                        <table id="tabela_produtos">
+
+                            <caption>
+
+                                Produtos e preços indicativos em CVE
+
+                            </caption>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th scope="col">N.º</th>
+
+                                    <th scope="col">Produto</th>
+
+                                    <th scope="col">Categoria</th>
+
+                                    <th scope="col">Preço (CVE)</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <!-- =================
+                                 CAFETARIA
+                            ================== -->
+
+                            <tbody id="categoria-cafetaria">
+
+                                <tr data-categoria="cafetaria">
+
+                                    <td>01</td>
+
+                                    <td>Café expresso</td>
+
+                                    <td>Cafetaria</td>
+
+                                    <td class="preco">80,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="cafetaria">
+
+                                    <td>02</td>
+
+                                    <td>Café com leite</td>
+
+                                    <td>Cafetaria</td>
+
+                                    <td class="preco">120,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="cafetaria">
+
+                                    <td>03</td>
+
+                                    <td>Cappuccino</td>
+
+                                    <td>Cafetaria</td>
+
+                                    <td class="preco">150,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="cafetaria">
+
+                                    <td>04</td>
+
+                                    <td>Chá</td>
+
+                                    <td>Cafetaria</td>
+
+                                    <td class="preco">100,00 $</td>
+
+                                </tr>
+
+                            </tbody>
+
+
+                            <!-- =================
+                                 BEBIDAS
+                            ================== -->
+
+                            <tbody id="categoria-bebidas">
+
+                                <tr data-categoria="bebidas">
+
+                                    <td>05</td>
+
+                                    <td>Água mineral</td>
+
+                                    <td>Bebidas</td>
+
+                                    <td class="preco">80,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="bebidas">
+
+                                    <td>06</td>
+
+                                    <td>Refrigerante</td>
+
+                                    <td>Bebidas</td>
+
+                                    <td class="preco">150,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="bebidas">
+
+                                    <td>07</td>
+
+                                    <td>Sumo natural</td>
+
+                                    <td>Bebidas</td>
+
+                                    <td class="preco">250,00 $</td>
+
+                                </tr>
+
+                            </tbody>
+
+
+                            <!-- =================
+                                 SANDES E SNACKS
+                            ================== -->
+
+                            <tbody id="categoria-snacks">
+
+                                <tr data-categoria="snacks">
+
+                                    <td>08</td>
+
+                                    <td>Sandes mista</td>
+
+                                    <td>Sandes e snacks</td>
+
+                                    <td class="preco">180,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="snacks">
+
+                                    <td>09</td>
+
+                                    <td>Tosta mista</td>
+
+                                    <td>Sandes e snacks</td>
+
+                                    <td class="preco">200,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="snacks">
+
+                                    <td>10</td>
+
+                                    <td>Hambúrguer</td>
+
+                                    <td>Sandes e snacks</td>
+
+                                    <td class="preco">350,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="snacks">
+
+                                    <td>11</td>
+
+                                    <td>Batata frita</td>
+
+                                    <td>Sandes e snacks</td>
+
+                                    <td class="preco">200,00 $</td>
+
+                                </tr>
+
+                            </tbody>
+
+
+                            <!-- =================
+                                 GASTRONOMIA
+                            ================== -->
+
+                            <tbody id="categoria-gastronomia">
+
+                                <tr data-categoria="gastronomia">
+
+                                    <td>12</td>
+
+                                    <td>Cachupa refogada</td>
+
+                                    <td>Gastronomia</td>
+
+                                    <td class="preco">350,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="gastronomia">
+
+                                    <td>13</td>
+
+                                    <td>Prato do dia</td>
+
+                                    <td>Gastronomia</td>
+
+                                    <td class="preco">600,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="gastronomia">
+
+                                    <td>14</td>
+
+                                    <td>Frango grelhado</td>
+
+                                    <td>Gastronomia</td>
+
+                                    <td class="preco">700,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="gastronomia">
+
+                                    <td>15</td>
+
+                                    <td>Peixe grelhado</td>
+
+                                    <td>Gastronomia</td>
+
+                                    <td class="preco">850,00 $</td>
+
+                                </tr>
+
+                            </tbody>
+
+
+                            <!-- =================
+                                 SOBREMESAS
+                            ================== -->
+
+                            <tbody id="categoria-sobremesas">
+
+                                <tr data-categoria="sobremesas">
+
+                                    <td>16</td>
+
+                                    <td>Gelado</td>
+
+                                    <td>Sobremesas</td>
+
+                                    <td class="preco">200,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="sobremesas">
+
+                                    <td>17</td>
+
+                                    <td>Bolo — fatia</td>
+
+                                    <td>Sobremesas</td>
+
+                                    <td class="preco">150,00 $</td>
+
+                                </tr>
+
+                                <tr data-categoria="sobremesas">
+
+                                    <td>18</td>
+
+                                    <td>Pudim</td>
+
+                                    <td>Sobremesas</td>
+
+                                    <td class="preco">200,00 $</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- Mensagem de pesquisa -->
+
+                    <p id="sem_resultados"
+                       role="status"
+                       hidden>
+
+                        Nenhum produto encontrado.
+
+                    </p>
+
+
+                    <!-- Quantidade de produtos -->
+
+                    <p id="total_produtos"
+                       aria-live="polite">
+
+                        18 produtos apresentados.
+
+                    </p>
+
+
+                    <!-- Observações -->
+
+                    <div class="ementa-nota">
+
+                        <i class="fa-solid fa-circle-info"
                            aria-hidden="true"></i>
 
-                        Entre em contacto
+                        <p>
+                            Os preços apresentados são indicativos
+                            e encontram-se em escudos cabo-verdianos
+                            (CVE). Consulte o estabelecimento para
+                            confirmar os preços e a disponibilidade.
+                        </p>
 
-                    </a>
+                    </div>
 
-                    <a href="tel:+2389866418"
-                       class="btn-default">
+                </section>
 
-                        <i class="fa-solid fa-phone"
+
+                <!-- =========================
+                     CONTACTO
+                ========================== -->
+
+                <section id="servicos-contacto">
+
+                    <div class="servicos-contacto-container">
+
+                        <i class="fa-solid fa-mug-hot"
                            aria-hidden="true"></i>
 
-                        (+238) 986 64 18
+                        <h2>
 
-                    </a>
+                            Venha desfrutar dos nossos serviços
 
-                </div>
+                        </h2>
+
+                        <p>
+                            Visite-nos na Praça Alexandre Albuquerque,
+                            no Plateau, e desfrute de momentos
+                            agradáveis na Esplanada Morabeza.
+                        </p>
+
+                        <div class="servicos-contacto-botoes">
+
+                            <a href="contactos.html"
+                               class="btn-default">
+
+                                <i class="fa-solid fa-location-dot"
+                                   aria-hidden="true"></i>
+
+                                Entre em contacto
+
+                            </a>
+
+                            <a href="tel:+2389866418"
+                               class="btn-default">
+
+                                <i class="fa-solid fa-phone"
+                                   aria-hidden="true"></i>
+
+                                (+238) 986 64 18
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
 
             </div>
 
-        </section>
+            <!-- Fim da coluna de conteúdo -->
+
+        </div>
+
+        <!-- Fim do layout Grid -->
 
     </main>
+
 
     <!-- =====================================
          RODAPÉ

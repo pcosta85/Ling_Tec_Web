@@ -16,19 +16,24 @@
     <title>Sobre | Esplanada Morabeza</title>
 
     <!-- Font Awesome -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <!-- Google Fonts -->
+
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 
     <!-- CSS principal -->
+
     <link rel="stylesheet"
           href="src/styles/styles.css">
 
     <!-- JavaScript -->
-    <script src="src/javascript/script.js" defer></script>
+
+    <script src="src/javascript/script.js"
+            defer></script>
 
 </head>
 
@@ -40,10 +45,14 @@
 
     <header>
 
-        <nav id="navbar">
+        <nav id="navbar"
+             class="menu-horizontal"
+             aria-label="Navegação principal">
 
             <!-- Logótipo -->
-            <a href="index.html" id="nav_logo">
+
+            <a href="index.html"
+               id="nav_logo">
 
                 <i class="fa-solid fa-mug-hot"
                    aria-hidden="true"></i>
@@ -53,28 +62,49 @@
             </a>
 
             <!-- Menu de navegação -->
+
             <ul id="nav_list">
 
                 <li class="nav-item">
-                    <a href="./index.html">Início</a>
+
+                    <a href="./index.html">
+                        Início
+                    </a>
+
                 </li>
 
                 <li class="nav-item active">
+
                     <a href="./sobre.html"
-                    aria-current="page">Sobre</a>
+                       class="ativo"
+                       aria-current="page">
+
+                        Sobre
+
+                    </a>
+
                 </li>
 
                 <li class="nav-item">
-                    <a href="./servicos.html">Serviços</a>
+
+                    <a href="./servicos.html">
+                        Serviços
+                    </a>
+
                 </li>
 
                 <li class="nav-item">
-                    <a href="./contactos.html">Contacto</a>
+
+                    <a href="./contactos.html">
+                        Contacto
+                    </a>
+
                 </li>
 
             </ul>
 
             <!-- Menu móvel -->
+
             <button id="mobile_btn"
                     type="button"
                     aria-label="Abrir menu"
@@ -90,20 +120,31 @@
 
     </header>
 
+
     <!-- =====================================
          CONTEÚDO PRINCIPAL
     ====================================== -->
 
     <main id="content">
 
-        <!-- Apresentação da página -->
+
+        <!-- =================================
+             APRESENTAÇÃO DA PÁGINA
+        ================================== -->
+
         <section id="sobre-introducao">
 
             <span class="sobre-subtitle">
+
                 Conheça a nossa história
+
             </span>
 
-            <h1>Sobre a Esplanada Morabeza</h1>
+            <h1>
+
+                Sobre a Esplanada Morabeza
+
+            </h1>
 
             <p class="sobre-localizacao">
 
@@ -116,6 +157,7 @@
 
         </section>
 
+
         <!-- =================================
              HISTÓRIA DA ESPLANADA
         ================================== -->
@@ -124,7 +166,9 @@
 
             <div class="sobre-container">
 
+
                 <!-- Imagem -->
+
                 <div class="sobre-imagem">
 
                     <img src="src/Imagem/morabeza.jpg"
@@ -132,20 +176,30 @@
                          Alexandre Albuquerque, Plateau">
 
                     <p class="legenda-imagem">
+
                         Esplanada Morabeza —
                         Praça Alexandre Albuquerque
+
                     </p>
 
                 </div>
 
+
                 <!-- Informação histórica -->
+
                 <div class="sobre-texto">
 
                     <span class="sobre-subtitle">
+
                         Tradição e identidade
+
                     </span>
 
-                    <h2>A nossa história</h2>
+                    <h2>
+
+                        A nossa história
+
+                    </h2>
 
                     <p>
                         A Esplanada Morabeza está situada na
@@ -177,6 +231,7 @@
 
         </section>
 
+
         <!-- =================================
              INAUGURAÇÃO
         ================================== -->
@@ -185,6 +240,9 @@
 
             <div class="inauguracao-container">
 
+
+                <!-- Ícone da inauguração -->
+
                 <div class="inauguracao-icone">
 
                     <i class="fa-solid fa-calendar-days"
@@ -192,19 +250,36 @@
 
                 </div>
 
+
+                <!-- Subtítulo -->
+
                 <span class="sobre-subtitle">
+
                     Um marco na nossa história
+
                 </span>
 
+
+                <!-- Data de inauguração -->
+
                 <h2>
+
                     <time datetime="2011-09-15">
+
                         15 de Setembro de 2011
+
                     </time>
+
                 </h2>
 
                 <h3>
+
                     Inauguração da Esplanada Morabeza
+
                 </h3>
+
+
+                <!-- Informações históricas -->
 
                 <p>
                     A infra-estrutura renovada e modernizada
@@ -228,25 +303,45 @@
 
         </section>
 
+
         <!-- =================================
              IMPORTÂNCIA DA ESPLANADA
+
+             Ficha de Exercícios 4
+             Exercício 3 - CSS Grid
+
+             Organização dos seis cartões
         ================================== -->
 
         <section id="importancia">
 
             <h2 class="section-title">
+
                 A importância da Esplanada Morabeza
+
             </h2>
+
+
+            <!-- Contentor CSS Grid -->
 
             <div class="importancia-container">
 
-                <!-- Património histórico -->
+
+                <!-- =========================
+                     CARTÃO 1
+                     Património histórico
+                ========================== -->
+
                 <article class="importancia-cartao">
 
                     <i class="fa-solid fa-landmark"
                        aria-hidden="true"></i>
 
-                    <h3>Património histórico</h3>
+                    <h3>
+
+                        Património histórico
+
+                    </h3>
 
                     <p>
                         Recuperação de um espaço de referência
@@ -255,13 +350,22 @@
 
                 </article>
 
-                <!-- Cultura e convívio -->
+
+                <!-- =========================
+                     CARTÃO 2
+                     Cultura e convívio
+                ========================== -->
+
                 <article class="importancia-cartao">
 
                     <i class="fa-solid fa-users"
                        aria-hidden="true"></i>
 
-                    <h3>Cultura e convívio</h3>
+                    <h3>
+
+                        Cultura e convívio
+
+                    </h3>
 
                     <p>
                         Promoção de um ambiente tranquilo,
@@ -271,13 +375,22 @@
 
                 </article>
 
-                <!-- Turismo e comércio -->
+
+                <!-- =========================
+                     CARTÃO 3
+                     Turismo e comércio
+                ========================== -->
+
                 <article class="importancia-cartao">
 
                     <i class="fa-solid fa-store"
                        aria-hidden="true"></i>
 
-                    <h3>Turismo e comércio</h3>
+                    <h3>
+
+                        Turismo e comércio
+
+                    </h3>
 
                     <p>
                         Contributo para a dinamização
@@ -287,9 +400,82 @@
 
                 </article>
 
+
+                <!-- =========================
+                     CARTÃO 4
+                     Gastronomia
+                ========================== -->
+
+                <article class="importancia-cartao">
+
+                    <i class="fa-solid fa-utensils"
+                       aria-hidden="true"></i>
+
+                    <h3>
+
+                        Gastronomia
+
+                    </h3>
+
+                    <p>
+                        Um espaço para desfrutar da gastronomia
+                        e de momentos de convívio.
+                    </p>
+
+                </article>
+
+
+                <!-- =========================
+                     CARTÃO 5
+                     Localização privilegiada
+                ========================== -->
+
+                <article class="importancia-cartao">
+
+                    <i class="fa-solid fa-location-dot"
+                       aria-hidden="true"></i>
+
+                    <h3>
+
+                        Localização privilegiada
+
+                    </h3>
+
+                    <p>
+                        Situada na Praça Alexandre Albuquerque,
+                        no coração do Plateau.
+                    </p>
+
+                </article>
+
+
+                <!-- =========================
+                     CARTÃO 6
+                     Hospitalidade
+                ========================== -->
+
+                <article class="importancia-cartao">
+
+                    <i class="fa-solid fa-heart"
+                       aria-hidden="true"></i>
+
+                    <h3>
+
+                        Hospitalidade
+
+                    </h3>
+
+                    <p>
+                        Valorização de um ambiente tranquilo,
+                        acolhedor e amigo.
+                    </p>
+
+                </article>
+
             </div>
 
         </section>
+
 
         <!-- =================================
              CONVITE AOS VISITANTES
@@ -303,7 +489,9 @@
                    aria-hidden="true"></i>
 
                 <h2>
+
                     Um espaço tranquilo, acolhedor e amigo
+
                 </h2>
 
                 <p>
@@ -327,20 +515,31 @@
 
         </section>
 
+
         <!-- =================================
              FONTES DE INFORMAÇÃO
         ================================== -->
 
         <section id="fontes">
 
-            <h2>Fontes de informação</h2>
+            <h2>
+
+                Fontes de informação
+
+            </h2>
 
             <p>
                 Informações de referência sobre a história
                 e a inauguração da Esplanada Morabeza.
             </p>
 
+
+            <!-- Lista das fontes -->
+
             <ul class="fontes-lista">
+
+
+                <!-- Facebook -->
 
                 <li>
 
@@ -360,6 +559,9 @@
                     </a>
 
                 </li>
+
+
+                <!-- Espaço Cabo Verde -->
 
                 <li>
 
@@ -386,6 +588,7 @@
 
     </main>
 
+
     <!-- =====================================
          RODAPÉ
     ====================================== -->
@@ -393,8 +596,10 @@
     <footer>
 
         <p>
+
             &copy; 2026 Esplanada Morabeza —
             Todos os direitos reservados.
+
         </p>
 
     </footer>

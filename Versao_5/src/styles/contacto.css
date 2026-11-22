@@ -739,7 +739,19 @@
    15. DESIGN RESPONSIVO
 ========================================= */
 
+/* Botão desactivado */
 
+#form_contacto button:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+
+}
 /* Tablets */
 
 @media screen and (max-width: 1024px) {

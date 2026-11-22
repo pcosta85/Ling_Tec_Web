@@ -1,62 +1,76 @@
 /* =========================================
-   PÁGINA SOBRE
+
    ESPLANADA MORABEZA
+
+   PÁGINA SOBRE
+   Layouts, site responsivo e efeitos
 ========================================= */
 
 
 /* =========================================
-   1. INTRODUÇÃO
+   1. INTRODUÇÃO DA PÁGINA
 ========================================= */
 
 #sobre-introducao {
+
     width: 100%;
-
     padding: 45px 5% 30px;
-
     text-align: center;
+
 }
+
 
 /* Subtítulo */
+
 .sobre-subtitle {
+
     display: block;
-
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
-
-    color: var(--cor-destaque);
-
+    color: #99531C;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-
     margin-bottom: 10px;
+
 }
+
 
 /* Título principal */
+
 #sobre-introducao h1 {
-    font-size: clamp(28px, 4vw, 42px);
+
+    font-size: clamp(1.75rem, 4vw, 2.625rem);
     font-weight: 600;
-
     color: var(--cor-primaria);
-
     line-height: 1.3;
-
     margin-bottom: 15px;
+
 }
 
+
 /* Localização */
+
 .sobre-localizacao {
+
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-wrap: wrap;
     gap: 8px;
 
-    font-size: 15px;
+    max-width: 65ch;
+    margin: 0 auto;
+
+    font-size: 0.9375rem;
     color: var(--cor-texto);
+
 }
 
+
 .sobre-localizacao i {
+
     color: var(--cor-destaque);
+
 }
 
 
@@ -65,81 +79,120 @@
 ========================================= */
 
 #sobre {
+
     margin: 0 5%;
     padding: 40px 0;
 
-    border-top: 1px solid var(--cor-secundaria);
+    border-top:
+        1px solid var(--cor-secundaria);
+
 }
 
-/* Contentor principal */
+
+/* =========================================
+   2.1. GRID DA HISTÓRIA
+
+   Primeira coluna: imagem.
+   Segunda coluna: texto.
+========================================= */
+
 .sobre-container {
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        minmax(0, 1fr) minmax(0, 1fr);
 
     align-items: center;
-
     gap: 40px;
+
 }
 
-/* Área da imagem */
+
+/* =========================================
+   2.2. IMAGEM HISTÓRICA
+========================================= */
+
 .sobre-imagem {
+
     width: 100%;
+    min-width: 0;
+
 }
 
-/* Fotografia */
+
 .sobre-imagem img {
+
+    display: block;
+
     width: 100%;
-
-    aspect-ratio: 4 / 3;
-
-    object-fit: cover;
-    object-position: center;
+    max-width: 100%;
+    height: auto;
 
     border-radius: 20px;
 
-    box-shadow: 0 5px 15px
-                rgba(0, 0, 0, 0.10);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
 }
 
-/* Legenda da imagem */
-.legenda-imagem {
-    margin-top: 12px;
 
-    font-size: 12px;
+/* Legenda da imagem */
+
+.legenda-imagem {
+
+    max-width: 65ch;
+    margin: 12px auto 0;
+
+    font-size: 0.75rem;
     font-style: italic;
+    text-align: center;
 
     color: var(--cor-texto);
 
-    text-align: center;
 }
 
-/* Área do texto */
+
+/* =========================================
+   2.3. TEXTO HISTÓRICO
+========================================= */
+
 .sobre-texto {
+
     display: flex;
     flex-direction: column;
-
     gap: 15px;
+
+    min-width: 0;
+
 }
+
 
 .sobre-texto .sobre-subtitle {
+
     margin-bottom: 0;
+
 }
 
-/* Título da história */
+
 .sobre-texto h2 {
-    font-size: 30px;
-    font-weight: 600;
 
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    font-weight: 600;
     color: var(--cor-primaria);
+
 }
 
-/* Parágrafos */
+
 .sobre-texto p {
-    font-size: 15px;
+
+    max-width: 65ch;
+
+    font-size: 0.9375rem;
     line-height: 1.8;
 
     color: var(--cor-texto);
+
 }
 
 
@@ -148,35 +201,47 @@
 ========================================= */
 
 #inauguracao {
+
+    width: 100%;
     padding: 20px 5% 40px;
+
 }
 
+
 /* Contentor da inauguração */
+
 .inauguracao-container {
-    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
 
     padding: 40px 8%;
 
     background-color: var(--cor-branca);
 
-    border-radius: 18px;
+    border-top:
+        4px solid var(--cor-secundaria);
 
-    border-top: 4px solid var(--cor-secundaria);
+    border-radius: 18px;
 
     text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
 
-    gap: 15px;
-
-    box-shadow: 0 4px 12px
-                rgba(0, 0, 0, 0.05);
 }
 
-/* Ícone da inauguração */
+
+/* =========================================
+   3.1. ÍCONE DA INAUGURAÇÃO
+========================================= */
+
 .inauguracao-icone {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,46 +250,52 @@
     height: 70px;
 
     background-color: var(--cor-fundo);
-
     border-radius: 50%;
+
 }
 
-/* Formatação do ícone */
+
 .inauguracao-icone i {
+
     font-size: 32px;
     color: var(--cor-destaque);
+
 }
 
-/* Subtítulo */
-.inauguracao-container .sobre-subtitle {
-    margin-bottom: 0;
-}
 
-/* Data da inauguração */
+/* =========================================
+   3.2. DATA E TÍTULO
+========================================= */
+
 .inauguracao-container h2 {
-    font-size: clamp(24px, 3vw, 36px);
 
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
     font-weight: 600;
-
     color: var(--cor-primaria);
+
 }
 
-/* Título secundário */
+
 .inauguracao-container h3 {
-    font-size: 18px;
-    font-weight: 500;
 
-    color: var(--cor-destaque);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--cor-primaria);
+
 }
 
-/* Informações históricas */
-.inauguracao-container p {
-    max-width: 850px;
 
-    font-size: 15px;
+/* Texto da inauguração */
+
+.inauguracao-container p {
+
+    max-width: 65ch;
+
+    font-size: 0.9375rem;
     line-height: 1.8;
 
     color: var(--cor-texto);
+
 }
 
 
@@ -233,28 +304,57 @@
 ========================================= */
 
 #importancia {
+
     margin: 0 5%;
     padding: 35px 0;
 
-    border-top: 1px solid var(--cor-secundaria);
+    border-top:
+        1px solid var(--cor-secundaria);
+
 }
 
-/* Organização dos cartões */
+
+/* =========================================
+   4.1. CSS GRID DOS SEIS CARTÕES
+
+   Ficha de Exercícios 4
+   Exercício 3
+
+   auto-fit:
+   Ajusta automaticamente as colunas.
+
+   minmax(220px, 1fr):
+   Largura mínima de 220px por cartão.
+========================================= */
+
 .importancia-container {
+
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
 
     gap: 20px;
 
+    width: 100%;
     margin-top: 30px;
+
 }
 
-/* Cartões */
+
+/* =========================================
+   4.2. FORMATAÇÃO DOS CARTÕES
+========================================= */
+
 .importancia-cartao {
+
+    min-width: 0;
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
+    justify-content: center;
 
     gap: 15px;
 
@@ -262,44 +362,72 @@
 
     background-color: var(--cor-branca);
 
+    border:
+        1px solid var(--cor-secundaria);
+
     border-radius: 15px;
 
     text-align: center;
 
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition:
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
 }
+
 
 /* Ícones dos cartões */
-.importancia-cartao i {
-    font-size: 32px;
 
+.importancia-cartao i {
+
+    font-size: 32px;
     color: var(--cor-destaque);
+
 }
+
 
 /* Títulos dos cartões */
-.importancia-cartao h3 {
-    font-size: 18px;
-    font-weight: 600;
 
+.importancia-cartao h3 {
+
+    font-size: 1.125rem;
+    font-weight: 600;
     color: var(--cor-primaria);
+
 }
 
-/* Texto dos cartões */
-.importancia-cartao p {
-    font-size: 14px;
 
+/* Descrição dos cartões */
+
+.importancia-cartao p {
+
+    max-width: 65ch;
+
+    font-size: 0.875rem;
     line-height: 1.7;
 
     color: var(--cor-texto);
+
 }
 
-/* Efeito ao passar o rato */
-.importancia-cartao:hover {
+
+/* =========================================
+   4.3. EFEITOS NOS CARTÕES
+
+   Ficha 4 - Exercício 8
+========================================= */
+
+.importancia-cartao:hover,
+
+.importancia-cartao:focus-within {
+
     transform: translateY(-5px);
 
-    box-shadow: 0 6px 15px
-                rgba(0, 0, 0, 0.10);
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.10);
+
 }
 
 
@@ -308,14 +436,22 @@
 ========================================= */
 
 #sobre-convite {
+
+    width: 100%;
     padding: 30px 5%;
+
 }
 
+
 /* Contentor do convite */
+
 .convite-container {
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
+    justify-content: center;
 
     gap: 20px;
 
@@ -328,43 +464,73 @@
     border-radius: 18px;
 
     text-align: center;
+
 }
 
-/* Ícone principal do convite */
+
+/* Ícone principal */
+
 .convite-container > i {
+
     font-size: 36px;
 
     color: var(--cor-secundaria);
+
 }
 
-/* Título */
+
+/* Título do convite */
+
 .convite-container h2 {
-    font-size: clamp(23px, 3vw, 30px);
 
+    font-size: clamp(1.375rem, 3vw, 1.875rem);
     font-weight: 600;
+
 }
 
-/* Texto */
+
+/* Texto do convite */
+
 .convite-container p {
-    max-width: 700px;
 
-    font-size: 15px;
+    max-width: 65ch;
 
+    font-size: 0.9375rem;
     line-height: 1.8;
+
 }
 
-/* Botão */
+
+/* =========================================
+   5.1. BOTÃO VENHA VISITAR-NOS
+========================================= */
+
 .convite-container .btn-default {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
     gap: 10px;
 
     background-color: var(--cor-secundaria);
 
     color: var(--cor-primaria);
+
 }
 
-/* Efeito do botão */
-.convite-container .btn-default:hover {
+
+/* Efeitos do botão */
+
+.convite-container .btn-default:hover,
+
+.convite-container .btn-default:focus-visible {
+
     background-color: var(--cor-branca);
+
+    color: var(--cor-primaria);
+
 }
 
 
@@ -373,62 +539,112 @@
 ========================================= */
 
 #fontes {
+
     margin: 0 5%;
     padding: 30px 0 40px;
+
+    border-top:
+        1px solid var(--cor-secundaria);
+
 }
 
+
 /* Título */
+
 #fontes h2 {
-    font-size: 20px;
+
+    font-size: 1.25rem;
+
     font-weight: 600;
 
     color: var(--cor-primaria);
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+
 }
 
-/* Descrição */
-#fontes p {
-    font-size: 14px;
 
-    color: var(--cor-texto);
+/* Texto informativo */
+
+#fontes p {
+
+    max-width: 65ch;
+
+    font-size: 0.875rem;
+    line-height: 1.8;
 
     margin-bottom: 15px;
+
 }
 
-/* Lista de fontes */
+
+/* =========================================
+   6.1. LISTA DAS FONTES
+========================================= */
+
 .fontes-lista {
+
     display: flex;
     flex-direction: column;
 
     gap: 12px;
+
+    list-style: none;
+
 }
 
-/* Links */
+
+.fontes-lista li {
+
+    min-width: 0;
+
+}
+
+
+/* =========================================
+   6.2. LIGAÇÕES EXTERNAS
+========================================= */
+
 .fontes-lista a {
+
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
 
     gap: 8px;
 
+    max-width: 100%;
+
+    font-size: 0.8125rem;
+
     color: var(--cor-primaria);
 
-    font-size: 13px;
+    overflow-wrap: anywhere;
 
     transition: color 0.3s ease;
+
 }
 
-/* Ícones */
-.fontes-lista i {
+
+/* Ícones das fontes */
+
+.fontes-lista a i {
+
     color: var(--cor-destaque);
+
 }
 
-/* Efeito dos links */
-.fontes-lista a:hover {
-    color: var(--cor-destaque);
+
+/* Efeitos das ligações */
+
+.fontes-lista a:hover,
+
+.fontes-lista a:focus-visible {
+
+    color: #99531C;
 
     text-decoration: underline;
+
 }
 
 
@@ -436,139 +652,299 @@
    7. DESIGN RESPONSIVO
 ========================================= */
 
-/* Tablets */
+
+/* =========================================
+   7.1. ECRÃS ATÉ 1024px
+========================================= */
+
 @media screen and (max-width: 1024px) {
 
     .sobre-container {
+
         gap: 25px;
-    }
 
-    .sobre-texto h2 {
-        font-size: 26px;
-    }
-
-    .sobre-texto p {
-        font-size: 14px;
     }
 
     .importancia-container {
+
         gap: 15px;
-    }
 
-}
-
-
-/* Telemóveis */
-@media screen and (max-width: 768px) {
-
-    #sobre-introducao {
-        padding: 35px 5% 25px;
-    }
-
-    #sobre-introducao h1 {
-        font-size: 28px;
-    }
-
-    .sobre-subtitle {
-        font-size: 12px;
-    }
-
-    .sobre-localizacao {
-        font-size: 13px;
-    }
-
-    /* Imagem e texto em coluna */
-    .sobre-container {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-    }
-
-    .sobre-imagem img {
-        border-radius: 15px;
-    }
-
-    .sobre-texto {
-        gap: 12px;
-    }
-
-    .sobre-texto h2 {
-        font-size: 26px;
-    }
-
-    .sobre-texto p {
-        font-size: 14px;
-
-        line-height: 1.7;
-    }
-
-    /* Inauguração */
-    .inauguracao-container {
-        padding: 30px 6%;
-    }
-
-    .inauguracao-container h2 {
-        font-size: 26px;
-    }
-
-    .inauguracao-container h3 {
-        font-size: 16px;
-    }
-
-    .inauguracao-container p {
-        font-size: 14px;
-    }
-
-    /* Cartões verticais */
-    .importancia-container {
-        grid-template-columns: 1fr;
     }
 
     .importancia-cartao {
-        padding: 25px 20px;
-    }
 
-    /* Convite */
-    .convite-container {
-        padding: 30px 6%;
-    }
+        padding: 25px 15px;
 
-    .convite-container h2 {
-        font-size: 23px;
-    }
-
-    .convite-container p {
-        font-size: 14px;
     }
 
 }
 
 
-/* Telemóveis pequenos */
-@media screen and (max-width: 480px) {
+/* =========================================
+   7.2. ECRÃS ATÉ 768px
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    #sobre-introducao {
+
+        padding: 35px 4% 25px;
+
+    }
+
+    #sobre {
+
+        margin: 0 4%;
+        padding: 30px 0;
+
+    }
+
+    /* Imagem e texto numa única coluna */
+
+    .sobre-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+    .sobre-imagem {
+
+        max-width: 600px;
+        margin: 0 auto;
+
+    }
+
+    .sobre-texto {
+
+        gap: 12px;
+
+    }
+
+    .sobre-texto p {
+
+        font-size: 0.9375rem;
+
+    }
+
+    #inauguracao {
+
+        padding: 20px 4% 30px;
+
+    }
+
+    .inauguracao-container {
+
+        padding: 30px 6%;
+
+    }
+
+    #importancia {
+
+        margin: 0 4%;
+
+    }
+
+    /* O auto-fit continua a controlar
+       automaticamente os seis cartões. */
+
+    .importancia-container {
+
+        gap: 15px;
+
+    }
+
+    #sobre-convite {
+
+        padding: 25px 4%;
+
+    }
+
+    .convite-container {
+
+        padding: 30px 6%;
+
+    }
+
+    #fontes {
+
+        margin: 0 4%;
+
+    }
+
+}
+
+
+/* =========================================
+   7.3. ECRÃS ATÉ 600px
+========================================= */
+
+@media screen and (max-width: 600px) {
 
     #sobre-introducao h1 {
-        font-size: 25px;
+
+        font-size: 1.625rem;
+
+    }
+
+    .sobre-subtitle {
+
+        font-size: 0.75rem;
+
+    }
+
+    .sobre-localizacao {
+
+        font-size: 0.8125rem;
+
     }
 
     .sobre-texto h2 {
-        font-size: 24px;
+
+        font-size: 1.5rem;
+
     }
 
     .inauguracao-container h2 {
-        font-size: 22px;
+
+        font-size: 1.5rem;
+
     }
 
-    .sobre-imagem img {
-        border-radius: 12px;
+    .inauguracao-container h3 {
+
+        font-size: 1rem;
+
+    }
+
+    .importancia-cartao {
+
+        padding: 20px 15px;
+
     }
 
     .importancia-cartao h3 {
-        font-size: 16px;
+
+        font-size: 1rem;
+
+    }
+
+    .convite-container h2 {
+
+        font-size: 1.375rem;
+
+    }
+
+}
+
+
+/* =========================================
+   7.4. ECRÃS ATÉ 480px
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    #sobre-introducao h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+    .sobre-imagem img {
+
+        border-radius: 12px;
+
+    }
+
+    .inauguracao-container {
+
+        padding: 25px 15px;
+
+        border-radius: 12px;
+
+    }
+
+    .inauguracao-icone {
+
+        width: 55px;
+        height: 55px;
+
+    }
+
+    .inauguracao-icone i {
+
+        font-size: 26px;
+
+    }
+
+    .importancia-cartao {
+
+        border-radius: 12px;
+
+    }
+
+    .convite-container {
+
+        padding: 25px 15px;
+
+        border-radius: 12px;
+
     }
 
     .fontes-lista a {
-        font-size: 12px;
+
+        font-size: 0.75rem;
+
+    }
+
+}
+
+
+/* =========================================
+   7.5. PROTECÇÃO PARA ECRÃS MUITO ESTREITOS
+========================================= */
+
+@media screen and (max-width: 280px) {
+
+    .importancia-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   8. ACESSIBILIDADE
+
+   Movimento reduzido
+   Ficha 4 - Exercício 8
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .importancia-cartao,
+
+    .convite-container .btn-default,
+
+    .fontes-lista a {
+
+        transition: none;
+
+    }
+
+    .importancia-cartao:hover,
+
+    .importancia-cartao:focus-within,
+
+    .convite-container .btn-default:hover,
+
+    .convite-container .btn-default:focus-visible {
+
+        transform: none;
+
     }
 
 }
