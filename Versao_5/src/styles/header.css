@@ -1,0 +1,80 @@
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: var(--cor-primaria);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Barra de navegação */
+#navbar {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 5%;
+}
+
+/* Logótipo */
+#nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: var(--cor-branca);
+}
+
+#nav_logo i {
+    font-size: 22px;
+    color: var(--cor-secundaria);
+}
+
+/* Lista do menu */
+#nav_list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Links do menu */
+.nav-item a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cor-branca);
+
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o rato */
+.nav-item a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Página activa */
+.nav-item.active a {
+    border-bottom: 2px solid
+                   var(--cor-secundaria);
+
+    padding-bottom: 5px;
+}
+
+/* Botão menu móvel */
+#mobile_btn {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: var(--cor-branca);
+
+    font-size: 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+/* Rodapé */
+footer {
+    width: 100%;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 5%;
+
+    text-align: center;
+}
+
+/* Texto do rodapé */
+footer p {
+    font-size: 13px;
+    font-weight: 400;
+}

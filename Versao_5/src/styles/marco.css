@@ -1,0 +1,107 @@
+:root {
+    --cor-primaria: #234D38;
+    --cor-secundaria: #D4A373;
+    --cor-fundo: #FAF6EF;
+    --cor-branca: #FFFFFF;
+    --cor-texto: #26332C;
+    --cor-destaque: #BC6C25;
+
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navegação suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Corpo da página */
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.6;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+}
+
+/* Formatação dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Formatação das listas */
+ul {
+    list-style: none;
+}
+
+/* Formatação das imagens */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Formatação das secções */
+section {
+    padding: 25px 5%;
+}
+
+/* Títulos das secções */
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botão principal */
+.btn-default {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Efeito do botão */
+.btn-default:hover {
+    background-color: var(--cor-destaque);
+    transform: translateY(-2px);
+}
+
+/* Navegação por teclado */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 4px;
+}

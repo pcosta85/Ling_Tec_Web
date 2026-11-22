@@ -1,0 +1,27 @@
+/* =========================================
+   ESPLANADA MORABEZA
+   FICHEIRO PRINCIPAL DE ESTILOS
+========================================= */
+/* Configurações globais */
+@import url("./marco.css");
+
+/* Cabeçalho e navegação */
+@import url("./header.css");
+
+/* Página inicial */
+@import url("./home.css");
+
+/* Página Sobre */
+@import url("./sobre.css");
+
+/* Página Serviços */
+@import url("./servicos.css");
+
+/* Página Contactos */
+@import url("./contacto.css");
+
+/* Rodapé */
+@import url("./footer.css");
+
+/* Design responsivo */
+@import url("./responsive.css");

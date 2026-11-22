@@ -1,0 +1,574 @@
+/* =========================================
+   PÁGINA SOBRE
+   ESPLANADA MORABEZA
+========================================= */
+
+
+/* =========================================
+   1. INTRODUÇÃO
+========================================= */
+
+#sobre-introducao {
+    width: 100%;
+
+    padding: 45px 5% 30px;
+
+    text-align: center;
+}
+
+/* Subtítulo */
+.sobre-subtitle {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--cor-destaque);
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+/* Título principal */
+#sobre-introducao h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+
+    line-height: 1.3;
+
+    margin-bottom: 15px;
+}
+
+/* Localização */
+.sobre-localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 15px;
+    color: var(--cor-texto);
+}
+
+.sobre-localizacao i {
+    color: var(--cor-destaque);
+}
+
+
+/* =========================================
+   2. HISTÓRIA DA ESPLANADA
+========================================= */
+
+#sobre {
+    margin: 0 5%;
+    padding: 40px 0;
+
+    border-top: 1px solid var(--cor-secundaria);
+}
+
+/* Contentor principal */
+.sobre-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+/* Área da imagem */
+.sobre-imagem {
+    width: 100%;
+}
+
+/* Fotografia */
+.sobre-imagem img {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px
+                rgba(0, 0, 0, 0.10);
+}
+
+/* Legenda da imagem */
+.legenda-imagem {
+    margin-top: 12px;
+
+    font-size: 12px;
+    font-style: italic;
+
+    color: var(--cor-texto);
+
+    text-align: center;
+}
+
+/* Área do texto */
+.sobre-texto {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.sobre-texto .sobre-subtitle {
+    margin-bottom: 0;
+}
+
+/* Título da história */
+.sobre-texto h2 {
+    font-size: 30px;
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+}
+
+/* Parágrafos */
+.sobre-texto p {
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: var(--cor-texto);
+}
+
+
+/* =========================================
+   3. INAUGURAÇÃO
+========================================= */
+
+#inauguracao {
+    padding: 20px 5% 40px;
+}
+
+/* Contentor da inauguração */
+.inauguracao-container {
+    width: 100%;
+
+    padding: 40px 8%;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 18px;
+
+    border-top: 4px solid var(--cor-secundaria);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 4px 12px
+                rgba(0, 0, 0, 0.05);
+}
+
+/* Ícone da inauguração */
+.inauguracao-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    background-color: var(--cor-fundo);
+
+    border-radius: 50%;
+}
+
+/* Formatação do ícone */
+.inauguracao-icone i {
+    font-size: 32px;
+    color: var(--cor-destaque);
+}
+
+/* Subtítulo */
+.inauguracao-container .sobre-subtitle {
+    margin-bottom: 0;
+}
+
+/* Data da inauguração */
+.inauguracao-container h2 {
+    font-size: clamp(24px, 3vw, 36px);
+
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+}
+
+/* Título secundário */
+.inauguracao-container h3 {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--cor-destaque);
+}
+
+/* Informações históricas */
+.inauguracao-container p {
+    max-width: 850px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: var(--cor-texto);
+}
+
+
+/* =========================================
+   4. IMPORTÂNCIA DA ESPLANADA
+========================================= */
+
+#importancia {
+    margin: 0 5%;
+    padding: 35px 0;
+
+    border-top: 1px solid var(--cor-secundaria);
+}
+
+/* Organização dos cartões */
+.importancia-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+/* Cartões */
+.importancia-cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 30px 20px;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Ícones dos cartões */
+.importancia-cartao i {
+    font-size: 32px;
+
+    color: var(--cor-destaque);
+}
+
+/* Títulos dos cartões */
+.importancia-cartao h3 {
+    font-size: 18px;
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+}
+
+/* Texto dos cartões */
+.importancia-cartao p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: var(--cor-texto);
+}
+
+/* Efeito ao passar o rato */
+.importancia-cartao:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 6px 15px
+                rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   5. CONVITE AOS VISITANTES
+========================================= */
+
+#sobre-convite {
+    padding: 30px 5%;
+}
+
+/* Contentor do convite */
+.convite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 40px 8%;
+
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-branca);
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+/* Ícone principal do convite */
+.convite-container > i {
+    font-size: 36px;
+
+    color: var(--cor-secundaria);
+}
+
+/* Título */
+.convite-container h2 {
+    font-size: clamp(23px, 3vw, 30px);
+
+    font-weight: 600;
+}
+
+/* Texto */
+.convite-container p {
+    max-width: 700px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+/* Botão */
+.convite-container .btn-default {
+    gap: 10px;
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-primaria);
+}
+
+/* Efeito do botão */
+.convite-container .btn-default:hover {
+    background-color: var(--cor-branca);
+}
+
+
+/* =========================================
+   6. FONTES DE INFORMAÇÃO
+========================================= */
+
+#fontes {
+    margin: 0 5%;
+    padding: 30px 0 40px;
+}
+
+/* Título */
+#fontes h2 {
+    font-size: 20px;
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+
+    margin-bottom: 10px;
+}
+
+/* Descrição */
+#fontes p {
+    font-size: 14px;
+
+    color: var(--cor-texto);
+
+    margin-bottom: 15px;
+}
+
+/* Lista de fontes */
+.fontes-lista {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* Links */
+.fontes-lista a {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: var(--cor-primaria);
+
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+/* Ícones */
+.fontes-lista i {
+    color: var(--cor-destaque);
+}
+
+/* Efeito dos links */
+.fontes-lista a:hover {
+    color: var(--cor-destaque);
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   7. DESIGN RESPONSIVO
+========================================= */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+
+    .sobre-container {
+        gap: 25px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 26px;
+    }
+
+    .sobre-texto p {
+        font-size: 14px;
+    }
+
+    .importancia-container {
+        gap: 15px;
+    }
+
+}
+
+
+/* Telemóveis */
+@media screen and (max-width: 768px) {
+
+    #sobre-introducao {
+        padding: 35px 5% 25px;
+    }
+
+    #sobre-introducao h1 {
+        font-size: 28px;
+    }
+
+    .sobre-subtitle {
+        font-size: 12px;
+    }
+
+    .sobre-localizacao {
+        font-size: 13px;
+    }
+
+    /* Imagem e texto em coluna */
+    .sobre-container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .sobre-imagem img {
+        border-radius: 15px;
+    }
+
+    .sobre-texto {
+        gap: 12px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 26px;
+    }
+
+    .sobre-texto p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    /* Inauguração */
+    .inauguracao-container {
+        padding: 30px 6%;
+    }
+
+    .inauguracao-container h2 {
+        font-size: 26px;
+    }
+
+    .inauguracao-container h3 {
+        font-size: 16px;
+    }
+
+    .inauguracao-container p {
+        font-size: 14px;
+    }
+
+    /* Cartões verticais */
+    .importancia-container {
+        grid-template-columns: 1fr;
+    }
+
+    .importancia-cartao {
+        padding: 25px 20px;
+    }
+
+    /* Convite */
+    .convite-container {
+        padding: 30px 6%;
+    }
+
+    .convite-container h2 {
+        font-size: 23px;
+    }
+
+    .convite-container p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Telemóveis pequenos */
+@media screen and (max-width: 480px) {
+
+    #sobre-introducao h1 {
+        font-size: 25px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 24px;
+    }
+
+    .inauguracao-container h2 {
+        font-size: 22px;
+    }
+
+    .sobre-imagem img {
+        border-radius: 12px;
+    }
+
+    .importancia-cartao h3 {
+        font-size: 16px;
+    }
+
+    .fontes-lista a {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,636 @@
+/* =========================================
+   ESPLANADA MORABEZA
+   PÁGINA DE SERVIÇOS
+========================================= */
+
+
+/* =========================================
+   1. INTRODUÇÃO
+========================================= */
+
+#servicos-introducao {
+    width: 100%;
+    padding: 45px 5% 30px;
+
+    text-align: center;
+}
+
+.servicos-subtitle {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    color: var(--cor-destaque);
+}
+
+#servicos-introducao h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+}
+
+#servicos-introducao p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: var(--cor-texto);
+}
+
+
+/* =========================================
+   2. CARTÕES DOS SERVIÇOS
+   Utilizados também na página inicial
+========================================= */
+
+#servicos {
+    margin: 0 5%;
+    padding: 25px 0;
+
+    border-top: 1px solid var(--cor-secundaria);
+}
+
+#servicos .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.servicos-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 20px;
+    min-height: 110px;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.cartao i {
+    font-size: 26px;
+
+    color: var(--cor-destaque);
+}
+
+.cartao h3 {
+    font-size: 16px;
+    font-weight: 500;
+
+    color: var(--cor-primaria);
+}
+
+.cartao p {
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: var(--cor-texto);
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 6px 15px
+                rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   3. SECÇÃO DA EMENTA
+========================================= */
+
+#ementa {
+    margin: 0 5%;
+    padding: 35px 0;
+
+    border-top: 1px solid var(--cor-secundaria);
+}
+
+#ementa .servicos-subtitle {
+    text-align: center;
+}
+
+#ementa .section-title {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.ementa-descricao {
+    font-size: 14px;
+
+    color: var(--cor-texto);
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   4. PESQUISA E FILTROS
+========================================= */
+
+.ementa-filtros {
+    display: flex;
+    align-items: flex-end;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+}
+
+/* Campo individual */
+
+.campo-filtro {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+/* Etiquetas */
+
+.campo-filtro label {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--cor-primaria);
+}
+
+/* Área de pesquisa */
+
+.pesquisa-container {
+    position: relative;
+}
+
+.pesquisa-container i {
+    position: absolute;
+
+    top: 50%;
+    left: 14px;
+
+    transform: translateY(-50%);
+
+    color: var(--cor-destaque);
+
+    pointer-events: none;
+}
+
+/* Campos do formulário */
+
+.campo-filtro input,
+.campo-filtro select {
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+
+    background-color: var(--cor-fundo);
+
+    color: var(--cor-texto);
+
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+#pesquisa_produto {
+    padding-left: 40px;
+}
+
+/* Campo seleccionado */
+
+.campo-filtro input:focus,
+.campo-filtro select:focus {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 1px;
+}
+
+/* Botão limpar */
+
+#limpar_filtros {
+    min-height: 44px;
+
+    gap: 8px;
+
+    font-family: var(--fonte-principal);
+}
+
+
+/* =========================================
+   5. TABELA DE PRODUTOS
+========================================= */
+
+.tabela-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px
+                rgba(0, 0, 0, 0.06);
+}
+
+#tabela_produtos {
+    width: 100%;
+    min-width: 550px;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+/* Legenda da tabela */
+
+#tabela_produtos caption {
+    padding: 12px;
+
+    font-size: 13px;
+
+    color: var(--cor-texto);
+
+    text-align: left;
+}
+
+/* Cabeçalho da tabela */
+
+#tabela_produtos thead {
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-branca);
+}
+
+#tabela_produtos th {
+    padding: 16px 18px;
+
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Células da tabela */
+
+#tabela_produtos td {
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #E8E8E8;
+
+    color: var(--cor-texto);
+}
+
+/* Coluna de numeração */
+
+#tabela_produtos th:first-child,
+#tabela_produtos td:first-child {
+    width: 60px;
+
+    text-align: center;
+}
+
+/* Linhas alternadas */
+
+#tabela_produtos tbody tr:nth-child(even) {
+    background-color: #F5F1EB;
+}
+
+/* Efeito ao passar o rato */
+
+#tabela_produtos tbody tr:hover {
+    background-color: #E9EFE9;
+}
+
+/* Coluna de preços */
+
+#tabela_produtos th:last-child,
+#tabela_produtos td:last-child {
+    text-align: right;
+
+    white-space: nowrap;
+}
+
+#tabela_produtos .preco {
+    font-weight: 600;
+
+    color: var(--cor-primaria);
+}
+
+/* Ocultar produtos filtrados */
+
+#tabela_produtos tr[hidden] {
+    display: none;
+}
+
+/* Última linha */
+
+#tabela_produtos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   6. MENSAGENS E CONTAGEM
+========================================= */
+
+#sem_resultados {
+    padding: 25px;
+
+    margin-top: 10px;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 15px;
+
+    color: var(--cor-destaque);
+}
+
+#sem_resultados[hidden] {
+    display: none;
+}
+
+#total_produtos {
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    text-align: right;
+
+    color: var(--cor-primaria);
+}
+
+
+/* =========================================
+   7. OBSERVAÇÕES
+========================================= */
+
+.ementa-nota {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    margin-top: 20px;
+
+    background-color: #F2E9DA;
+
+    border-left: 4px solid var(--cor-destaque);
+
+    border-radius: 6px;
+}
+
+.ementa-nota i {
+    margin-top: 4px;
+
+    font-size: 18px;
+
+    color: var(--cor-destaque);
+}
+
+.ementa-nota p {
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: var(--cor-texto);
+}
+
+
+/* =========================================
+   8. CONVITE E CONTACTO
+========================================= */
+
+#servicos-contacto {
+    padding: 20px 5% 40px;
+}
+
+.servicos-contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 40px 8%;
+
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-branca);
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.servicos-contacto-container > i {
+    font-size: 35px;
+
+    color: var(--cor-secundaria);
+}
+
+.servicos-contacto-container h2 {
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 600;
+}
+
+.servicos-contacto-container p {
+    max-width: 750px;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Botões */
+
+.servicos-contacto-botoes {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.servicos-contacto-botoes .btn-default {
+    gap: 10px;
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-primaria);
+}
+
+.servicos-contacto-botoes .btn-default:hover {
+    background-color: var(--cor-branca);
+}
+
+
+/* =========================================
+   9. DESIGN RESPONSIVO
+========================================= */
+
+/* Tablets */
+
+@media screen and (max-width: 1024px) {
+
+    .ementa-filtros {
+        gap: 12px;
+    }
+
+    #tabela_produtos th,
+    #tabela_produtos td {
+        padding: 12px;
+    }
+
+}
+
+
+/* Telemóveis */
+
+@media screen and (max-width: 768px) {
+
+    #servicos-introducao {
+        padding: 35px 5% 25px;
+    }
+
+    #servicos-introducao h1 {
+        font-size: 28px;
+    }
+
+    #servicos-introducao p {
+        font-size: 14px;
+    }
+
+    .servicos-subtitle {
+        font-size: 12px;
+    }
+
+    /* Cartões verticais */
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Filtros verticais */
+
+    .ementa-filtros {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 15px;
+    }
+
+    .campo-filtro {
+        width: 100%;
+    }
+
+    #limpar_filtros {
+        width: 100%;
+    }
+
+    /* Tabela */
+
+    #tabela_produtos {
+        font-size: 13px;
+    }
+
+    #tabela_produtos th {
+        font-size: 13px;
+    }
+
+    /* Informação */
+
+    .ementa-nota p {
+        font-size: 12px;
+    }
+
+    /* Contacto */
+
+    .servicos-contacto-container {
+        padding: 30px 6%;
+    }
+
+    .servicos-contacto-container h2 {
+        font-size: 23px;
+    }
+
+    .servicos-contacto-container p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Telemóveis pequenos */
+
+@media screen and (max-width: 480px) {
+
+    #servicos-introducao h1 {
+        font-size: 25px;
+    }
+
+    #ementa .section-title {
+        font-size: 23px;
+    }
+
+    .servicos-contacto-botoes {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .servicos-contacto-botoes .btn-default {
+        width: 100%;
+    }
+
+}

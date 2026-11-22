@@ -1,0 +1,188 @@
+/* ==================================
+   TABLETS
+================================== */
+
+@media screen and (max-width: 1024px) {
+
+    #navbar {
+        padding: 15px 4%;
+    }
+
+    #nav_logo {
+        font-size: 18px;
+    }
+
+    #nav_list {
+        gap: 18px;
+    }
+
+    #home {
+        gap: 25px;
+        padding: 25px 4%;
+    }
+
+    #cta .title {
+        font-size: 30px;
+    }
+
+    #cta .description {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ==================================
+   TELEMÓVEIS
+================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Cabeçalho */
+    #navbar {
+        flex-wrap: wrap;
+        padding: 15px 5%;
+    }
+
+    #nav_logo {
+        font-size: 17px;
+    }
+
+    /* Mostrar botão móvel */
+    #mobile_btn {
+        display: block;
+    }
+
+    /* Ocultar menu */
+    #nav_list {
+        display: none;
+
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        order: 3;
+
+        gap: 20px;
+        padding: 25px 0 10px;
+    }
+
+    /* Mostrar opções do menu */
+    #nav_list.open {
+        display: flex;
+    }
+
+    /* Página inicial */
+    #home {
+        flex-direction: column;
+
+        min-height: auto;
+
+        padding: 35px 5%;
+        gap: 30px;
+    }
+
+    /* Área de texto */
+    #cta {
+        width: 100%;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    #cta .subtitle {
+        font-size: 12px;
+    }
+
+    #cta .title {
+        font-size: 30px;
+    }
+
+    #cta .description {
+        font-size: 15px;
+    }
+
+    /* Botões e redes sociais */
+    #cta_buttons,
+    .social-media-buttons {
+        justify-content: center;
+    }
+
+    /* Área da imagem */
+    #banner {
+        width: 100%;
+    }
+
+    #banner img {
+        width: 100%;
+        max-width: 500px;
+
+        aspect-ratio: 4 / 3;
+
+        border-radius: 15px;
+    }
+
+    /* Cartões dos serviços */
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Títulos */
+    .section-title {
+        font-size: 22px;
+    }
+
+    /* Rodapé */
+    footer p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ==================================
+   TELEMÓVEIS PEQUENOS
+================================== */
+
+@media screen and (max-width: 480px) {
+
+    #nav_logo {
+        font-size: 15px;
+    }
+
+    #nav_logo i {
+        font-size: 18px;
+    }
+
+    #cta .title {
+        font-size: 25px;
+    }
+
+    #cta .description {
+        font-size: 14px;
+    }
+
+    .btn-default {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+
+    #banner img {
+        border-radius: 12px;
+    }
+
+}
+
+
+/* Respeitar preferências de movimento */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
+
+}
