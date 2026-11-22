@@ -1,80 +1,253 @@
-/* Cabeçalho */
+/* =========================================
+   ESPLANADA MORABEZA
+   CABEÇALHO E MENU DE NAVEGAÇÃO
+   FICHA DE EXERCÍCIOS 4
+========================================= */
+
+
+/* =========================================
+   1. CABEÇALHO
+========================================= */
+
 header {
+
     width: 100%;
+
     background-color: var(--cor-primaria);
 
+    border-bottom: 2px solid
+        var(--cor-secundaria);
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
+
 }
 
-/* Barra de navegação */
+
+/* =========================================
+   2. BARRA DE NAVEGAÇÃO
+
+   Flexbox organiza o logótipo à esquerda
+   e o menu à direita.
+========================================= */
+
 #navbar {
+
     width: 100%;
+
     min-height: 65px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
+    flex-wrap: wrap;
+
+    gap: 15px;
+
     padding: 12px 5%;
+
 }
 
-/* Logótipo */
+
+/* =========================================
+   3. LOGÓTIPO
+========================================= */
+
 #nav_logo {
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 
-    font-size: 20px;
+    font-size: 1.25rem;
+
     font-weight: 600;
 
     color: var(--cor-branca);
-}
-
-#nav_logo i {
-    font-size: 22px;
-    color: var(--cor-secundaria);
-}
-
-/* Lista do menu */
-#nav_list {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-/* Links do menu */
-.nav-item a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--cor-branca);
 
     transition: color 0.3s ease;
+
 }
 
-/* Efeito ao passar o rato */
-.nav-item a:hover {
+
+/* Ícone do logótipo */
+
+#nav_logo i {
+
+    font-size: 1.375rem;
+
     color: var(--cor-secundaria);
+
+    flex-shrink: 0;
+
 }
 
-/* Página activa */
-.nav-item.active a {
-    border-bottom: 2px solid
-                   var(--cor-secundaria);
 
-    padding-bottom: 5px;
+/* Efeito do logótipo */
+
+#nav_logo:hover,
+#nav_logo:focus-visible {
+
+    color: var(--cor-secundaria);
+
 }
 
-/* Botão menu móvel */
-#mobile_btn {
-    display: none;
 
-    background: transparent;
-    border: none;
+/* =========================================
+   4. LISTA DO MENU
+
+   Flexbox distribui os elementos
+   horizontalmente.
+========================================= */
+
+#nav_list {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+}
+
+
+/* Elementos individuais */
+
+.nav-item {
+
+    list-style: none;
+
+}
+
+
+/* =========================================
+   5. LINKS DO MENU
+========================================= */
+
+.nav-item a {
+
+    display: block;
+
+    padding: 8px 0;
+
+    font-size: 0.875rem;
+
+    font-weight: 500;
 
     color: var(--cor-branca);
 
-    font-size: 25px;
+    border-bottom: 2px solid transparent;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+/* =========================================
+   6. EFEITOS DO MENU
+
+   Aplicados ao rato e ao teclado.
+========================================= */
+
+.nav-item a:hover,
+.nav-item a:focus-visible {
+
+    color: var(--cor-secundaria);
+
+    border-bottom-color:
+        var(--cor-secundaria);
+
+}
+
+
+/* =========================================
+   7. PÁGINA ATUAL
+
+   Identificação da página selecionada.
+========================================= */
+
+.nav-item.active a,
+.nav-item a[aria-current="page"] {
+
+    color: var(--cor-secundaria);
+
+    border-bottom-color:
+        var(--cor-secundaria);
+
+}
+
+
+/* =========================================
+   8. BOTÃO DO MENU MÓVEL
+
+   Oculto em computadores e apresentado
+   através das media queries.
+========================================= */
+
+#mobile_btn {
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 44px;
+
+    min-height: 44px;
+
+    background-color: transparent;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: var(--cor-branca);
+
+    font-size: 1.5625rem;
+
     cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
+
+}
+
+
+/* Efeito do botão móvel */
+
+#mobile_btn:hover,
+#mobile_btn:focus-visible {
+
+    color: var(--cor-secundaria);
+
+    background-color:
+        rgba(255, 255, 255, 0.08);
+
+}
+
+
+/* =========================================
+   9. ÍCONE DO MENU MÓVEL
+========================================= */
+
+#mobile_btn i {
+
+    pointer-events: none;
+
 }

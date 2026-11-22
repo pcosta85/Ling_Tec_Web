@@ -1,27 +1,92 @@
 /* =========================================
    ESPLANADA MORABEZA
+
+   Universidade de Santiago
+
+   Licenciatura em Engenharia Informática
+
+   Linguagem e Tecnologias Web
+
+   Ficha de Exercícios 4
+   Layouts, site responsivo e efeitos
+
    FICHEIRO PRINCIPAL DE ESTILOS
 ========================================= */
-/* Configurações globais */
+
+
+/* =========================================
+   1. CONFIGURAÇÕES GLOBAIS
+========================================= */
+
 @import url("./marco.css");
 
-/* Cabeçalho e navegação */
+
+/* =========================================
+   2. CABEÇALHO E MENU FLEXBOX
+========================================= */
+
 @import url("./header.css");
 
-/* Página inicial */
+
+/* =========================================
+   3. PÁGINA INICIAL
+
+   Flexbox e destaques do negócio.
+========================================= */
+
 @import url("./home.css");
 
-/* Página Sobre */
+
+/* =========================================
+   4. PÁGINA SOBRE
+
+   Layout e cartões com CSS Grid.
+========================================= */
+
 @import url("./sobre.css");
 
-/* Página Serviços */
+
+/* =========================================
+   5. PÁGINA SERVIÇOS
+
+   Layout Grid, menu vertical,
+   filtros e tabela de produtos.
+========================================= */
+
 @import url("./servicos.css");
 
-/* Página Contactos */
+
+/* =========================================
+   6. PÁGINA CONTACTOS
+
+   Formulário, informações de contacto,
+   tabela de horários e localização.
+========================================= */
+
 @import url("./contacto.css");
 
-/* Rodapé */
+
+/* =========================================
+   7. RODAPÉ
+========================================= */
+
 @import url("./footer.css");
 
-/* Design responsivo */
+
+/* =========================================
+   8. DESIGN RESPONSIVO
+
+   Deve permanecer no final para permitir
+   a sobreposição das regras anteriores.
+
+   Media queries:
+   - 1024px
+   - 768px
+   - 600px
+   - 480px
+
+   Inclui também as preferências
+   de movimento reduzido.
+========================================= */
+
 @import url("./responsive.css");

@@ -2,6 +2,7 @@
 <html lang="pt-PT">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -14,60 +15,102 @@
     <title>Início | Esplanada Morabeza</title>
 
     <!-- Font Awesome -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <!-- Google Fonts -->
+
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 
     <!-- CSS principal -->
-    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <link rel="stylesheet"
+          href="src/styles/styles.css">
 
     <!-- JavaScript -->
-    <script src="src/javascript/script.js" defer></script>
+
+    <script src="src/javascript/script.js"
+            defer></script>
+
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- =====================================
+         CABEÇALHO
+    ====================================== -->
+
     <header>
-        <nav id="navbar">
+
+        <nav id="navbar"
+             class="menu-horizontal"
+             aria-label="Navegação principal">
+
+            <!-- Logótipo -->
 
             <a href="./index.html"
-            id="nav_logo"
-            aria-label="Esplanada Morabeza - Página inicial">
+               id="nav_logo"
+               aria-label="Esplanada Morabeza - Página inicial">
 
                 <i class="fa-solid fa-mug-hot"
-                aria-hidden="true"></i>
+                   aria-hidden="true"></i>
 
                 Esplanada Morabeza
 
             </a>
 
             <!-- Menu de navegação -->
+
             <ul id="nav_list">
 
                 <li class="nav-item active">
+
                     <a href="./index.html"
-                    aria-current="page">Início</a>
+                       class="ativo"
+                       aria-current="page">
+
+                        Início
+
+                    </a>
+
                 </li>
 
                 <li class="nav-item">
-                    <a href="./sobre.html">Sobre</a>
+
+                    <a href="./sobre.html">
+
+                        Sobre
+
+                    </a>
+
                 </li>
 
                 <li class="nav-item">
-                    <a href="./servicos.html">Serviços</a>
+
+                    <a href="./servicos.html">
+
+                        Serviços
+
+                    </a>
+
                 </li>
 
                 <li class="nav-item">
-                    <a href="./contactos.html">Contacto</a>
+
+                    <a href="./contactos.html">
+
+                        Contacto
+
+                    </a>
+
                 </li>
 
             </ul>
 
-            <!-- Botão menu móvel -->
+            <!-- Botão do menu móvel -->
+
             <button id="mobile_btn"
                     type="button"
                     aria-label="Abrir menu"
@@ -80,41 +123,65 @@
             </button>
 
         </nav>
+
     </header>
 
-    <!-- Conteúdo principal -->
+
+    <!-- =====================================
+         CONTEÚDO PRINCIPAL
+    ====================================== -->
+
     <main id="content">
 
-        <!-- Página inicial -->
-        <section id="home">
+
+        <!-- =================================
+             SECÇÃO DE APRESENTAÇÃO
+        ================================== -->
+
+        <section id="home"
+                 aria-labelledby="titulo-home">
 
             <!-- Conteúdo do lado esquerdo -->
+
             <div id="cta">
 
                 <span class="subtitle">
+
                     Gastronomia e Convívio
+
                 </span>
 
-                <h1 class="title">
+                <h1 id="titulo-home"
+                    class="title">
+
                     Bem-vindo à Esplanada Morabeza
+
                 </h1>
 
                 <p class="description">
+
                     O seu espaço de convívio e bons
                     momentos no Plateau.
+
                 </p>
 
+
                 <!-- Botão de contacto -->
+
                 <div id="cta_buttons">
 
                     <a href="contactos.html"
                        class="btn-default">
+
                         Entre em contacto
+
                     </a>
 
                 </div>
 
+
                 <!-- Telefone -->
+
                 <a href="tel:+2389866418"
                    id="phone_button">
 
@@ -125,8 +192,12 @@
 
                 </a>
 
+
                 <!-- Redes sociais -->
+
                 <div class="social-media-buttons">
+
+                    <!-- Facebook -->
 
                     <a href="https://www.facebook.com/esplanadamorabeza"
                        target="_blank"
@@ -135,7 +206,11 @@
 
                         <i class="fa-brands fa-facebook-f"
                            aria-hidden="true"></i>
+
                     </a>
+
+
+                    <!-- Instagram -->
 
                     <a href="https://www.instagram.com/esplanadamorabeza"
                        target="_blank"
@@ -144,14 +219,24 @@
 
                         <i class="fa-brands fa-instagram"
                            aria-hidden="true"></i>
+
                     </a>
 
                 </div>
 
             </div>
 
+
             <!-- Imagem do lado direito -->
+
             <div id="banner">
+
+                <!--
+                    Acrescentar width e height com
+                    as dimensões reais de morabeza.jpg
+                    depois de consultar as propriedades
+                    do ficheiro da imagem.
+                -->
 
                 <img src="src/Imagem/morabeza.jpg"
                      alt="Espaço da Esplanada Morabeza">
@@ -160,16 +245,33 @@
 
         </section>
 
-        <!-- Secção de serviços -->
-        <section id="servicos">
 
-            <h2 class="section-title">
+        <!-- =================================
+             SECÇÃO DE DESTAQUES
+
+             Ficha 4 - Exercício 2
+             Organização com Flexbox
+        ================================== -->
+
+        <section id="servicos"
+                 aria-labelledby="titulo-servicos">
+
+            <h2 id="titulo-servicos"
+                class="section-title">
+
                 Os nossos serviços
+
             </h2>
 
-            <div class="servicos-container">
+
+            <!-- Contentor Flexbox dos destaques -->
+
+            <div id="home-destaques"
+                 class="servicos-container">
+
 
                 <!-- Cartão 1 -->
+
                 <article class="cartao">
 
                     <i class="fa-solid fa-utensils"
@@ -179,7 +281,9 @@
 
                 </article>
 
+
                 <!-- Cartão 2 -->
+
                 <article class="cartao">
 
                     <i class="fa-solid fa-mug-hot"
@@ -189,7 +293,9 @@
 
                 </article>
 
+
                 <!-- Cartão 3 -->
+
                 <article class="cartao">
 
                     <i class="fa-solid fa-users"
@@ -205,12 +311,18 @@
 
     </main>
 
-    <!-- Rodapé -->
+
+    <!-- =====================================
+         RODAPÉ
+    ====================================== -->
+
     <footer>
 
         <p>
+
             &copy; 2026 Esplanada Morabeza —
             Todos os direitos reservados.
+
         </p>
 
     </footer>
